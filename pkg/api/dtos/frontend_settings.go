@@ -1,9 +1,9 @@
 package dtos
 
 import (
-	"github.com/grafana/grafana-azure-sdk-go/v2/azsettings"
 	"github.com/grafana/grafana/pkg/plugins"
 	"github.com/grafana/grafana/pkg/setting"
+	"github.com/naizerjohn-ms/grafana-azure-sdk-go/azsettings"
 )
 
 type FrontendSettingsAuthDTO struct {

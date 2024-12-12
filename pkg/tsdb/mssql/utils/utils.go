@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/grafana/grafana-azure-sdk-go/v2/azcredentials"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
+	"github.com/naizerjohn-ms/grafana-azure-sdk-go/azcredentials"
 )
 
 // GetJsonData just gets the json in easier to work with type. It's used on multiple places which isn't super effective

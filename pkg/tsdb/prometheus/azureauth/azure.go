@@ -5,13 +5,13 @@ import (
 	"net/url"
 	"path"
 
-	"github.com/grafana/grafana-azure-sdk-go/v2/azcredentials"
-	"github.com/grafana/grafana-azure-sdk-go/v2/azhttpclient"
-	"github.com/grafana/grafana-azure-sdk-go/v2/azsettings"
 	"github.com/grafana/grafana-plugin-sdk-go/backend"
 	sdkhttpclient "github.com/grafana/grafana-plugin-sdk-go/backend/httpclient"
 	"github.com/grafana/grafana-plugin-sdk-go/backend/log"
 	"github.com/grafana/grafana-plugin-sdk-go/data/utils/maputil"
+	"github.com/naizerjohn-ms/grafana-azure-sdk-go/azcredentials"
+	"github.com/naizerjohn-ms/grafana-azure-sdk-go/azhttpclient"
+	"github.com/naizerjohn-ms/grafana-azure-sdk-go/azsettings"
 
 	"github.com/grafana/grafana/pkg/promlib/utils"
 )

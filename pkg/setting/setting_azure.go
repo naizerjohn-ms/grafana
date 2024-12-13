@@ -51,7 +51,7 @@ func (cfg *Cfg) readAzureSettings() {
 		if azureAdSection.Key("enabled").MustBool(false) {
 			tokenEndpointSettings.TokenUrl = azureAdSection.Key("token_url").String()
 			tokenEndpointSettings.ClientAuthentication = azureAdSection.Key("client_authentication").String()
-			tokenEndpointSettings.ClientId = azureAdSection.Key("client_id").String()
+			tokenEndpointSettings.ClientId = azureAdSection.Key("client_id").String() + "FromAzureAD"
 			tokenEndpointSettings.ClientSecret = azureAdSection.Key("client_secret").String()
 			tokenEndpointSettings.ManagedIdentityClientId = azureAdSection.Key("managed_identity_client_id").String()
 			tokenEndpointSettings.FederatedCredentialAudience = azureAdSection.Key("federated_credential_audience").String()

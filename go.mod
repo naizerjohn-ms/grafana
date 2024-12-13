@@ -481,7 +481,7 @@ require (
 	github.com/grafana/grafana/pkg/semconv v0.0.0-20240808213237-f4d2e064f435 // indirect
 	github.com/grafana/sqlds/v4 v4.1.0 // indirect
 	github.com/maypok86/otter v1.2.2 // indirect
-	github.com/naizerjohn-ms/grafana-azure-sdk-go v1.3.7
+	github.com/naizerjohn-ms/grafana-azure-sdk-go v1.3.8
 	github.com/planetscale/vtprotobuf v0.6.1-0.20240319094008-0393e58bdf10 // indirect
 	github.com/shadowspore/fossil-delta v0.0.0-20240102155221-e3a8590b820b // indirect
 )

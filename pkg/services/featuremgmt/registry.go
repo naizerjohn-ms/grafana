@@ -912,7 +912,7 @@ var (
 			Stage:        FeatureStageGeneralAvailability,
 			Expression:   "true", // enabled by default
 			FrontendOnly: true,
-			Owner:        grafanaDashboardsSquad,
+			Owner:        grafanaObservabilityMetricsSquad,
 		},
 		{
 			Name:         "alertingSimplifiedRouting",
@@ -1106,14 +1106,6 @@ var (
 			Stage:             FeatureStageExperimental,
 			Owner:             grafanaDashboardsSquad,
 			AllowSelfServe:    false,
-			HideFromDocs:      true,
-			HideFromAdminPage: true,
-		},
-		{
-			Name:              "authAPIAccessTokenAuth",
-			Description:       "Enables the use of Auth API access tokens for authentication",
-			Stage:             FeatureStageExperimental,
-			Owner:             identityAccessTeam,
 			HideFromDocs:      true,
 			HideFromAdminPage: true,
 		},
@@ -1743,6 +1735,15 @@ var (
 			Owner:       awsDatasourcesSquad,
 		},
 		{
+			Name:            "exploreMetricsUseExternalAppPlugin",
+			Description:     "Use the externalized Metrics Drilldown (formerly known as Explore Metrics) app plugin",
+			Stage:           FeatureStageExperimental,
+			Owner:           grafanaObservabilityMetricsSquad,
+			FrontendOnly:    true,
+			RequiresRestart: true,
+			HideFromDocs:    true,
+		},
+		{
 			Name:            "datasourceConnectionsTab",
 			Description:     "Shows defined connections for a data source in the plugins detail page",
 			Stage:           FeatureStageExperimental,
@@ -1775,6 +1776,13 @@ var (
 			HideFromAdminPage: true,
 			HideFromDocs:      true,
 			RequiresRestart:   true,
+		},
+		{
+			Name:         "newLogsPanel",
+			Description:  "Enables the new logs panel in Explore",
+			Stage:        FeatureStageExperimental,
+			FrontendOnly: true,
+			Owner:        grafanaObservabilityLogsSquad,
 		},
 	}
 )
